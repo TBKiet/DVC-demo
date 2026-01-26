@@ -1,0 +1,7 @@
+dvc
+wandb
+torch
+torchvision
+streamlit
+datasets
+scikit-learn
