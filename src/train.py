@@ -52,7 +52,8 @@ def train():
         'val': torch.utils.data.DataLoader(val_dataset, batch_size=BATCH_SIZE, shuffle=False)
     }
 
-    device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+    device = torch.device("cuda" if torch.cuda.is_available() else "mps" if torch.backends.mps.is_available() else "cpu")
+    print(f"Using device: {device}")
 
     # Model Setup
     model = models.resnet18(pretrained=True)
