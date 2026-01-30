@@ -3,4 +3,4 @@
 ['remote "storage"']
     url = gdrive://1nraj6a0Lwnn6JqQurGSsHzI-XpXgac4x
 ['remote "myremote"']
-    url = s3://trash-bucket-ofq3x54trp3r3jfn5jjnbieyq3bpoaps1a-s3alias
+    url = s3://demo-bucket-trash/dvc-store
